@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.BiConnector.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(45deg, #73c2fb, #4682b4, #b0e0e6);
+            background-size: 400% 400%;
+            animation: gradientAnimation 5s ease infinite;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 20px;
+        }
+
+        .logo a {
+            font-size: 36px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar ul a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar ul a:hover {
+            background-color: #73c2fb;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .navbar .login button,
+        .navbar .signup button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #4682b4;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .login button:hover,
+        .navbar .signup button:hover {
+            background-color: #007BFF;
+            transform: scale(1.1);
+        }
+
+        form {
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px 30px;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #4682b4;
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        form input {
+            width: calc(100% - 16px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+        }
+
+        form input:focus {
+            border-color: #4682b4;
+            box-shadow: 0 0 10px rgba(70, 130, 180, 0.8);
+        }
+
+        form a {
+            color: #4682b4;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        form a:hover {
+            text-decoration: underline;
+        }
+
+        .buttoncreate button {
+            width: 100%;
+            padding: 14px;
+            background-color: #4682b4;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .buttoncreate button:hover {
+            background-color: #4682b4;
+            transform: scale(1.1);
+        }
+
+        .cright {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cright a {
+            text-decoration: none;
+            color: #4682b4;
+        }
+
+        .cright a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">BiConnector</a>
+            </div>
+            <ul>
+                <li><a href="https://example.com">About</a></li>
+                <li><a href="https://example.com">Home</a></li>
+                <li><a href="https://example.com">Logout</a></li>
+                <li><a href="https://example.com">Help</a></li>
+                <div class="login"><button><a href="#">Log in</a></button></div>
+                <div class="signup"><button><a href="#">Sign up</a></button></div>
+            </ul>
+        </div>
+    </nav>
+
+    <form>
+        <h2>Login or Sign Up for BiConnector</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <a href="#">Forgot Email?</a>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <a href="#">Forgot Password?</a>
+        <div class="buttoncreate"><button>Create Account</button></div>
+    </form>
+
+    <div class="cright">
+        <p>&copy;2025 <a href="#">BiConnector</a>. "All rights reserved."</p>
+    </div>
+</body>
+
+</html>
